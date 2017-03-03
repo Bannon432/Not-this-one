@@ -1,26 +1,155 @@
-<! doctype html>
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content='text/html';
                   charset="utf-8">
                            <meta name='viewport' content='width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no'>
                            <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
-<!-- links to css and fonts-->
-<link rel="stylesheet" type="text/css" href="CSS/styles.css">
-<title>Boiler Plate</title>
+<!---- Links to CSS and Fonts ---->
+      <!---<link rel="stylesheet" type="text/css" href="css/framework.css">--->
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+<!---- Start Header ---->
+<title>McWhopper Fanpage</title>
     </head>
 <body>
-    <h1>Welcome To McKing</h1>
-        <h2>Home of the signature McWhopper</h2>
-    <img src="images/mc-king.png">
+    <div class='container-fluid'>
+    <div class='row'>
+        <div class='col-md-12 border'>
+            <header id='header'>
+                <h1>Welcome to the McWhopper Fanpage!</h1>
+            </header>
+        </div>
+    </div>
+<!---- End Header ---->
+<!---- Start Menu ---->
+            <nav id="nav">
+                <ul class='button-wrap'>
+                    <button>Schedule</button>
+                    <button data-toggle="modal" data-target="#mcwhopper_modal">McWhopper</button>
+                    <button data-toggle="modal" data-target="#mcking_modal">McKing</button>
+                    <button>Responsive Design</button>
+                </ul>
+            </nav>
+<!---- End Menu ----> 
+         <div class='row'>
+            <div class='col-md-8'>
+                <div id='main-content-wrapper'>
+                    <div class='side-by-side'>
+                        <section class='image-content'>
+                            <h4> 
+                            <a href='file:///C:/Users/Kiarra_bannon/Desktop/Web%20Files/project_1/index.html'>McKing</a>
+                            </h4>
+                        <img src='images/mc-king.png'>                        
+                        </section>
+                        <article>
+                    <h2>Summary</h2>
+                        <p>Our scientists were so preoccupied with whether or no they could, that they didn't stop to think if they should.</p>
+                        </article>
+                    </div>
+<!---- End Side By Side ---->
+                      <section id='skills'>
+                            <h5>
+                            Side Effects: <span>Diabetes | Get All the Chicks | Awesomeness | Instant Superstar</span>
+                            </h5>                   
+                        </section>
+                </div>
+             </div>
+<!---- End Main-Content-Wrapper ---->
+            <div class='col-md-4'>
+                <div id="aside-content-wrapper">
+                    <aside id='aside-right'>
+                        <h3>Latest Work</h3>
+                    <ul id="latest-work">
+                        <li>McWhopper Fanpage</li> 
+                        <li>Soon to Come!</li>
+                        <li>Soon to Come!</li>
+                        <li>Soon to Come!</li>
+                        <li>Soon to Come!</li>
+                        <li>Soon to Come!</li>                   
+                    </ul>                   
+                </aside>
+                </div>
+<!---- End Aside-Content Wrapper ---->
+            </div>
+<!---- End Middle-Wrapper ---->
+         </div>          
+        <div id='favorite-sites'>
+            <div class="row">
+                <div class='col-md-4'>
+                    <img class="img-responsive" src=''>
+                </div>
+                <div class='col-md-4'>
+                    <img class="img-responsive" src=''>
+                </div>
+                <div class='col-md-4'>
+                    <img class="img-responsive" src=''>
+                </div>
+            </div>
+         </div>
+        <div class='row'>
+            <div class='col-md-12 border'>
+                <footer><f1>Footy</f1></footer>
+            </div>
+        </div>
+    </div>
+<!---- End Container Div ---->
+<!---- Modal-HTML5 ---->
+<div class="modal fade" id="mcwhopper_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The McWhopper</h4>
+      </div>
+      <div class="modal-body">
+          <div class="image-modal">
+              <img src="images/mc-whopper.png">
+          </div>
+          <br>
+          <br>
+          <p><strong>McWhopper</strong> is the newest creation by the scientists at the McKing Laboratory. It has five pickles, picked at the peak of freshness. Four slices of fresh, garden grown tomatoes. A cup of fresh lettuce, 2 slices of fresh cheese and 8 ounces of grass fed beef.</p>
+        <br>
+        <p>Source:</p><span><a
+                href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+              </a></span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!---- Modal-CSS3 ---->
+<div class="modal fade" id="mcking_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">McKing</h4>
+      </div>
+      <div class="modal-body">
+          <div class="image-modal">
+              <img src="images/mc-king.png">
+          </div>
+          <br>
+          <br>
+          <p><strong>McKing</strong> is the latest evolution of McDonalds and Burger King. They have been workinghard to produce a new sandwich unlike anything you've ever tasted</p>
+        <br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src='js/main.js'></script>
 </body>
-<script src='JS/main.js'></script>
-             
-    
-    
-    
-    
-
-
 </html>
